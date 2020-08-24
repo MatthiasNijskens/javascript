@@ -9,8 +9,18 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
 
+    var age = prompt("How old are you?")
+    var gender = prompt("What is your gender?")
+    var hometown = prompt("Where are you from")
+    alert("Age: " + age + " gender: " + gender + " hometown: " + hometown)
+
+    if (confirm("Please confirm")) {
+
+    } else {
+        var age = prompt("How old are you?")
+        var gender = prompt("What is your gender?")
+        var hometown = prompt("Where are you from")
+        alert("Age: " + age + " gender: " + gender + " hometown: " + hometown)
+}
     // your code here
-
-})();
