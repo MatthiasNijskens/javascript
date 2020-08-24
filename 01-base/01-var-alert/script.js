@@ -10,6 +10,8 @@
 // You will have time to focus on it later.
 
 (function() {
+    var hey= "Hello World";
+    alert(hey);
 
     // your code here
 
