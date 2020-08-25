@@ -11,10 +11,29 @@
 
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
+    //switch is only needed once and will SWITCH between CASEs until it finds a match.
+    var performOperation = function (operation) {
+        switch (operation){
+            case "addition":
+                checkinput();
+                alert(numberone + numbertwo);
+                break;
 
-    var performOperation = function(operation) {
-        // perform the operation
-    };
+            case "substraction":
+                checkinput();
+                alert(numberone - numbertwo);
+                break;
+
+            case "multiplication":
+                checkinput();
+                alert(numberone * numbertwo);
+                break;
+
+            case "division":
+                checkinput();
+                alert(numberone / numbertwo);
+                break;
+        }};
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
@@ -22,3 +41,8 @@
         });
     });
 })();
+
+function checkinput(){
+    numberone = parseInt(document.getElementById("op-one").value);
+    numbertwo = parseInt(document.getElementById("op-two").value);
+}
