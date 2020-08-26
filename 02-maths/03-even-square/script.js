@@ -13,7 +13,13 @@
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        var msg="";
+        var res= "0";
+        for (var x = 1; x<=21; x++) {
+            var square = x * x;
+            var msg = msg + square + "\n";
+        }
+        alert(msg);
 
     });
 

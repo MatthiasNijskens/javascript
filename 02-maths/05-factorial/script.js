@@ -20,3 +20,26 @@
     });
 
 })();
+
+(function() {
+
+    // to get the value of an input: document.getElementById("element-id").value
+
+    let number;
+
+    document.getElementById("run").addEventListener("click", function() {
+
+        // your code here
+
+        checkInput();
+        let result = 1;
+        for (var i = number - 1; i >= 1; i--) {
+            result += result * i;
+        }
+        alert(result);
+    });
+    function checkInput(){
+        number = document.getElementById("number").value;
+    }
+
+})();
