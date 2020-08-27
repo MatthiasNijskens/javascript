@@ -10,7 +10,14 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
-
+    var months = [];
+    document.getElementById("run").addEventListener("click", function() {
+        for (var month=0; month<12; month++) {
+            var d = new Date(document.getElementById("year").value,month,13);
+            if(d.getDay() == 5){
+                months.push(d.toLocaleString('default', { month: 'long' }));
+            }
+        }
+        alert(months)
+    })
 })();
