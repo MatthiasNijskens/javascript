@@ -13,6 +13,18 @@
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
 
-    // your code here
+    let dayt = new Date();
+    let time = dayt.getHours();
+    //add minutes into calculation
+    let min = dayt.getMinutes();
+    //create a total of hours and mins
+    let total = time + min;
 
+
+    if (total < 1730) {
+        document.getElementById("target").innerHTML = "Hello";
+    }
+    else{
+        document.getElementById("target").innerHTML = "Good Evening";
+    }
 })();
