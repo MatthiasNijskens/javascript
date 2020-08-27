@@ -26,6 +26,11 @@
         "cherry",
     ];
 
-    // your code here
+    document.querySelector("button").onclick = function (event) {
+    let arrayLength = fruits.length
+    for (let i = 0; i < arrayLength; i++) {
+        console.log(i)
+    }
+    }
 
 })();
