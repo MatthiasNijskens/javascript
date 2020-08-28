@@ -26,6 +26,14 @@
         "cherry",
     ];
 
-    // your code here
+    document.querySelector("button").onclick = function (event) {
+        if (fruits.includes("apple")) {
+            console.log("yes")
+        }
+        else {
+            console.log("no")
+        }
+    }
 
 })();
+
