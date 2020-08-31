@@ -11,6 +11,18 @@
 
 (function() {
 
-    // your code here
+    let source = document.getElementById("source").dataset.image;
+    console.log(source);
+
+    let newimage = document.createElement("img");
+
+    newimage.setAttribute("src", source);
+    document.getElementById("target").appendChild(newimage);
+
+    let element = document.getElementById("source");
+    element.parentNode.removeChild(element);
+    console.log(source.image)
+
+
 
 })();
