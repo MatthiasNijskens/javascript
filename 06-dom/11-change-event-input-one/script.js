@@ -10,7 +10,27 @@
 // You will have time to focus on it later.
 
 (function() {
+    checkInput();
 
-    // your code here
+    function passLength(value){
+        let maxLength = 10;
+        if(value.length > maxLength) return false;
+        return true;
+    }
+
+    function counter(value){
+        let i = value.length;
+        document.getElementById("counter").innerHTML = i + "/10";
+    }
+
+    input.onkeyup = function() {
+
+        if (!passLength(this.value)) input.value = input.value.substr(0, 10);
+        counter(this.value);
+    }
+
+    function checkInput(){
+        input = document.getElementById("pass-one");
+    }
 
 })();
