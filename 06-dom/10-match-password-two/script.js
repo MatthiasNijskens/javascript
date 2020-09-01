@@ -11,6 +11,20 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function (){
+        checkInput();
+        if (left.value === right.value) {
+            alert("Passwords match!");
+        }
+        else {
+            left.classList.add("error");
+            right.classList.add("error");
+            alert("Incorrect password!")
+        }
+    })
+    function checkInput() {
+        left = document.getElementById("pass-one");
+        right = document.getElementById("pass-two");
+    }
 
 })();
