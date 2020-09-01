@@ -10,7 +10,22 @@
 // You will have time to focus on it later.
 
 (function() {
+    document.getElementById("run").addEventListener("click", function (){
+        checkInput();
+        if (left.value === right.value) {
+            left.style.border = "";
+            right.style.border = "";
+            alert("Passwords match!");
+        }
+        else {
+            left.style.border = "1px solid red";
+            right.style.border = "1px solid red";
+        }
+    })
 
-    // your code here
+    function checkInput(){
+        left = document.getElementById("pass-one");
+        right = document.getElementById("pass-two");
+    }
 
 })();
