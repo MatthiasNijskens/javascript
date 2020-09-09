@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    const btn = document.getElementById("run");
+    btn.addEventListener("click", function getPosts(){
+        window.lib.getPosts((resolve,reject) => {
+            setTimeout(() => {
+                if (reject) {
+                    console.log(reject)
+                } else {
+                    console.log(resolve)
+                }
+            }, 1000);
+        })
+    })
 })();
